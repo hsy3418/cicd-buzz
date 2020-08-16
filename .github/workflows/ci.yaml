@@ -19,9 +19,6 @@ jobs:
         pip install -r requirements.txt
     - name: unit-test
       run: python -m pytest -v
-    steps:
-    - name: Check out the repo
-      uses: actions/checkout@v2
     - name: Publish
       with:
         GITHUB_USER: ${{ secrets.GITHUB_USER }}
