@@ -13,6 +13,7 @@ jobs:
         with:
           GITHUB_USER: ${{ secrets.GITHUB_USER }}
           GITHUB_PASS: ${{ secrets.GITHUB_PASS}}
-        run: ./deploy_dockerhub.sh
+        run: |
+        sh ./deploy_dockerhub.sh
         
 
