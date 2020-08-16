@@ -1,0 +1,22 @@
+on: 
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  unit-test:
+    runs-on: ubuntu-latest
+    stpes:
+    - name: unit-test
+      run: |
+        python -m pytest -v
+  # code-quality:
+  
+  # publish-image:
+  #   env:
+  #     DOCKER_USER: hsy3418
+  #     DOCKER_EMAIL:
+  #     DOCKER_PASS:
