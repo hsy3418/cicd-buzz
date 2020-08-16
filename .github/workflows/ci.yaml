@@ -10,6 +10,6 @@ jobs:
   test:
     name: test
     runs-on: ubuntu-latest
-    stpes:
+    steps:
     - name: unit-test
       run: python -m pytest -v
